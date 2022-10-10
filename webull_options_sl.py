@@ -32,19 +32,19 @@ input_1 = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[2]/
 input_1.send_keys("0")
 
 input_2 = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/div/input')
-input_2.send_keys("5")
+input_2.send_keys("0")
 
 input_3 = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/div/input')
-input_3.send_keys("3")
+input_3.send_keys("0")
 
 input_4 = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/div/input')
 input_4.send_keys("0")
 
 input_5 = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/div/input')
-input_5.send_keys("9")
+input_5.send_keys("0")
 
 input_6 = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/div/input')
-input_6.send_keys("8")
+input_6.send_keys("0")
 
 trade_tab = driver.find_element(By.XPATH, '//*[@id="app"]/div/div[3]/div/div[2]/div[1]/div[6]/i')
 trade_tab.click()
@@ -88,8 +88,3 @@ update_price.send_keys(Keys.DECIMAL)
 update_price.send_keys(Keys.NUMPAD0)
 update_price.send_keys(Keys.NUMPAD7)
 
-
-#auto stop loss and auto get out with win
-
-#when i enter a trade automatically set my stop loss to $40 below what price i bought in on, for example if i get in at 1.50 per contract 1.10 would be my stop loss
-#then make it auto exit if the price goes 70 above my stop loss, so if my stop is at 1.1 and the contract is up to 1.80 it automatically goes in and changes the stop loss to 5 below that price
